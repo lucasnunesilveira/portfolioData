@@ -1,0 +1,153 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
+
+.logo {
+    float: left;
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7; 
+}
+
+.bg-dark {
+    background-color: #001529; 
+}
+.text-light {
+    color: rgba(255, 255, 255, 0.85);
+}
+.text-light p, .text-light .ant-typography {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    margin-bottom: 50px !important;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #1890ff; 
+}
+.section-title.inverted {
+    color: white !important;
+    border-bottom-color: #1890ff;
+}
+
+.hero-section {
+    min-height: calc(80vh - 64px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1f2833 0%, #2c3e50 100%); /* Gradiente escuro */
+    color: white;
+    text-align: center;
+    padding-top: 40px; 
+    padding-bottom: 40px;
+}
+
+.hero-avatar {
+    border: 5px solid #1890ff;
+    box-shadow: 0 0 25px rgba(24, 144, 255, 0.5);
+}
+
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: left; 
+    margin-bottom: 1.5em !important;
+}
+
+
+.ant-card-meta-description .ant-typography {
+    color: #666;
+}
+.ant-card-actions {
+    background: #fafafa;
+}
+.ant-card-actions > li > span > .ant-btn {
+    width: calc(100% - 16px); 
+    margin: 0 8px;
+}
+
+.skill-item {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.skill-item .anticon {
+    transition: transform 0.3s ease;
+}
+.skill-item:hover .anticon {
+    transform: scale(1.1);
+}
+
+.contact-link, .contact-link:hover {
+    font-size: 1.2rem;
+    color: #91d5ff !important; 
+}
+.contact-link .anticon {
+    margin-right: 8px;
+}
+
+.social-icon {
+    font-size: 2.5rem; 
+    color: #91d5ff;
+    transition: color 0.3s ease;
+}
+.social-icon:hover {
+    color: #ffffff; 
+}
+
+.scroll-to-top-btn {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    z-index: 1000 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 767px) {
+
+    .hero-section {
+        min-height: calc(70vh - 56px); 
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .hero-section .ant-typography-h1 {
+        font-size: 2.2rem !important; 
+    }
+     .hero-section .ant-typography-paragraph {
+        font-size: 1rem !important;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+    .section-title {
+        font-size: 1.8rem !important;
+        margin-bottom: 30px !important;
+    }
+}
